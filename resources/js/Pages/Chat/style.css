@@ -1,0 +1,12 @@
+.overflow-auto {
+    scroll-behavior: smooth;
+  }
+
+  .messanger {
+    position: relative;
+  }
+
+  .highlight {
+    background-color: #FFFF99; /* Change this to your desired highlight color */
+    transition: background-color 0.5s ease;
+  }
