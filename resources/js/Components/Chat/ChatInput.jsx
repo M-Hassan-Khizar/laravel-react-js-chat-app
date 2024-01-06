@@ -2,6 +2,9 @@ import { useForm } from "@inertiajs/react";
 import TextInput from "../TextInput";
 import { useState } from "react";
 
+
+
+
 export default function ChatInput({ receiver }) {
     const { data, setData, post, processing, errors, reset } = useForm({
         message: "",
@@ -24,6 +27,8 @@ export default function ChatInput({ receiver }) {
         e.preventDefault();
         setMessage('')
         // alert(123)
+
+
         // var content = document.getElementById('new_message_div');
         // content.scrollTop += 100;
 
