@@ -19,12 +19,12 @@ createInertiaApp({
     },
 
 });
-InertiaProgress.init({color: '#4B5563'});
+// InertiaProgress.init({color: '#4B5563'});
 
-Echo.private('messenger.1.2')
-    .listen('MessageSent', (e) => {
-        console.log('>>>>>>>>>>>>>>>>>>',e.message);
-    });
+// Echo.private('messenger.1.2')
+// .listen('MessageSent', (e) => {
+//     console.log('>>>>>>>>>>>>>>>>>>',e.message);
+// });
 
 // Echo.join(`group_chat.1`)
 //     .here((users) => {

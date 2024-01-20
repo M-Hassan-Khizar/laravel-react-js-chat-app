@@ -2,8 +2,12 @@
 
 namespace App\Models;
 
+use Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Carbon\Carbon;
+
+
 
 class Message extends Model
 {
@@ -13,4 +17,14 @@ class Message extends Model
         'sender_id',
         'receiver_id'
     ];
+
+
+    public function getCreatedAtAttribute($data)
+    {
+return Carbon::parse($data)->diffForHumans();
+    }   public function getUpdatedAtAttribute($data)
+    {
+return Carbon::parse($data)->diffForHumans();
+    }
+
 }
